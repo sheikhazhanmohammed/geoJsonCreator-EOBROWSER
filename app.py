@@ -6,7 +6,6 @@ import numpy as np
 import folium
 from streamlit_folium import st_folium
 from folium.plugins import Draw
-import pandas as pd
 
 st.set_page_config(page_title='GeoJSON Creator', layout="wide")
 
