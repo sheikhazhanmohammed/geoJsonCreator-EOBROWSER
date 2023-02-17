@@ -21,7 +21,7 @@ if file is not None:
     image = np.clip(rgb, a_min=0, a_max=0.4)
     image = arrayToImage(rgb)
     filename = "./input"+str(inputid)+".png"
-    cv2.imwrite("./trial.png", image)
+    cv2.imwrite(filename, image)
     map = folium.Map(location=[bounds[1], bounds[0]], zoom_start=16, scrollWheelZoom=True, tiles='CartoDB positron')
     img = folium.raster_layers.ImageOverlay(
         name="RGB Image",
